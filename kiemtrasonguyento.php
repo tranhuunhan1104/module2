@@ -1,45 +1,45 @@
 <?php
 
-// if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-//     $abc = $_REQUEST['number'];
-//     $count = 0;
+    $abc = $_REQUEST['number'];
+    $count = 0;
 
-//     for ($i = 2; $i <= $abc; $i++) {
-//         for ($j = 1; $j <= $i; $j++) {
-//             if ($i % $j == 0) {
-//                 $count++;
-//             }
-//         }
-//         if ($count == 2) {
-//             echo $i;
-//             echo '<br>';
-//         }
-//         $count = 0;
-//     }
-// }
-
-if ( $_SERVER['REQUEST_METHOD']== 'POST') {
-    $number = $_REQUEST['number'];
- $count = 0;  
- $a = 2; 
-while ($count < $number){
-$flag = true;
-
-    for(  $i=2; $i< $a;$i++){
-        if($a%$i ==0){
-            $flag = false;
+    for ($i = 2; $i <= $abc; $i++) {
+        for ($j = 1; $j <= $i; $j++) {
+            if ($i % $j == 0) {
+                $count++;
+            }
         }
+        if ($count == 2) {
+            echo $i;
+            echo '<br>';
+        }
+        $count = 0;
+    }
+}
 
-    }
-    if($flag){
-        echo $a;
-        echo '<br>';
-        $count++;
-    }
-    $a++;
-}
-}
+// if ( $_SERVER['REQUEST_METHOD']== 'POST') {
+//     $number = $_REQUEST['number'];
+//  $count = 0;  
+//  $a = 2; 
+// while ($count < $number){
+// $flag = true;
+
+//     for(  $i=2; $i< $a;$i++){
+//         if($a%$i ==0){
+//             $flag = false;
+//         }
+
+//     }
+//     if($flag){
+//         echo $a;
+//         echo '<br>';
+//         $count++;
+//     }
+//     $a++;
+// }
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
