@@ -40,15 +40,18 @@ $phone = null;
     $phone = $_REQUEST['sdt'];
     $hasError = false;
     if (empty($_REQUEST['username'])){
-        $usernameErr = 'Bạn chưa nhập tên đăng nhập !!';
+        echo 'Bạn chưa nhập tên đăng nhập !!';
+        echo'<br>';
         $hasError = true;
     }
     if (empty($_REQUEST['email'])){
-        $emailErr = 'Bạn chưa nhập email !!';
+        echo 'Bạn chưa nhập email !!';
+        echo'<br>';
         $hasError = true;
     } 
     if (empty($phone)) {
-        $phoneErr = " Số điện thoại không được để trống!";
+        echo" Số điện thoại không được để trống!";
+        echo'<br>';
         $hasError = true;
     }
 
