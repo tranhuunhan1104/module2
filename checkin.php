@@ -259,7 +259,7 @@ if ( $_SERVER['REQUEST_METHOD']== 'POST') {
           break;
           case '/':
            if ($sothuhai == 0){
-            echo ' looix roi ku em a';
+            echo ' error !!! ';
            }
            else{
             $ketqua = $sothunhat / $sothuhai;

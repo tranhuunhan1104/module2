@@ -23,7 +23,7 @@ if ( $_SERVER['REQUEST_METHOD']== 'POST') {
                         break;
                         case '/':
                             if ($sothuhai == 0){
-                                echo 'lỗi!!';
+                                echo 'error!!';
                                }
                                else{
                                 $ketqua = $sothunhat / $sothuhai;
