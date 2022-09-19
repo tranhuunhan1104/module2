@@ -39,6 +39,14 @@ if ( $_SERVER['REQUEST_METHOD']== 'POST') {
 }
 
  ?>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>xây dựng lớp user</title>
+</head>
  <form action="" method="post">
     <p>Nhập tên người dùng</p>
     <input type="text" name="username" id="">

@@ -26,7 +26,7 @@ if ( $_SERVER['REQUEST_METHOD']== 'POST') {
                         echo $ketqua;
                        }
                     break;
-                } 
+                    }
 }
 else{
 echo 'nhập đầy đủ 2 số';
