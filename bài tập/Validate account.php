@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD']== 'POST') {
 
     $pattern = '/^[_a-z0-9]{6,}$/';
     if (preg_match($pattern, $string)) {
-        echo 'Khớp';
+        echo 'Định dạng tài khoản của bạn hợp lệ';
     } else {
-        echo 'Không khớp';
+        echo 'Định dạng tài khoản của bạn không hợp lệ';
     }
 }
 ?>
@@ -25,10 +25,10 @@ if ($_SERVER['REQUEST_METHOD']== 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Validate email</title>
+    <title>Validate account</title>
 </head>
  <form action="" method="post">
-    <p>Nhập email người dùng</p>
+    <p>Nhập tài khoản người dùng</p>
     <input type="text" name="email" id="">
     
     <input type="submit" v alue="Login">

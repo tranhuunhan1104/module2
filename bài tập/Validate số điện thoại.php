@@ -16,9 +16,9 @@
     
         $pattern = '/^\([0-9]{2,2}\)+\-+\(0+[0-9]{9,9}\)$/';
         if (preg_match($pattern, $string)) {
-            echo 'SỐ ĐIỆN THOẠI CỦA BẠN HỢP LỆ';
+            echo 'SỐ ĐIỆN THOẠI CỦA BẠN HỢP LỆ !!';
         } else {
-            echo 'SỐ ĐIỆN THOẠI CỦA BẠN KHÔNG HỢP LỆ';
+            echo 'SỐ ĐIỆN THOẠI CỦA BẠN KHÔNG HỢP LỆ !!';
         }
     }
     ?>

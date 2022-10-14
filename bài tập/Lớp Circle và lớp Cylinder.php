@@ -51,19 +51,30 @@
     }
 
     $objCylinder = new Cylinder( $radius, $color );
-    echo 'Diện tích hình tròn là : '.$objCylinder ->area();
+    echo'Màu của hình trụ là : '.$objCylinder ->getColor();
+    echo'<br>';
+    echo 'Diện tích hình tròn là : '.$objCylinder ->area().' cm2';
     echo'<br>';
     $cylinder = new Cylinder($radius,$color);
     $cylinder ->setHeight( $height );
-    echo 'Thể tích hình trụ là : '.$cylinder ->volume();
+    echo 'Thể tích hình trụ là : '.$cylinder ->volume().'cm3';
 }
       ?>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lớp Circle và lớp Cylinder</title>
+</head>
+<body>
 <form action="" method="post">
-    <p> nhập bán kính </p>
+    <p> nhập bán kính (cm)</p>
     <input type="text" name="radius" id="">
     <p> nhập màu</p>
     <input type="text" name="color" id="">
-    <p> nhập chiều cao</p>
+    <p> nhập chiều cao (cm)</p>
     <input type="text" name="height" id="">
    <br>
     <input type="submit" v alue="Login">
